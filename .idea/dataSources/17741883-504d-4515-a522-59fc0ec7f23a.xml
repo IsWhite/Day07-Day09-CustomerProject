@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - customers@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="customers">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="A"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="lanlou"/>
+    <schema id="5" name="lanou"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="mysqlDay03"/>
+    <schema id="8" name="Mywork"/>
+    <schema id="9" name="performance_schema"/>
+    <schema id="10" name="sys"/>
+    <schema id="11" name="users"/>
+    <table id="12" parent="1" name="t_customer"/>
+    <column id="13" parent="12" name="cid">
+      <mandatory>1</mandatory>
+      <data-type>char(32)|0</data-type>
+    </column>
+    <column id="14" parent="12" name="cname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="15" parent="12" name="gender">
+      <mandatory>1</mandatory>
+      <data-type>varchar(6)|0</data-type>
+    </column>
+    <column id="16" parent="12" name="birthday">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="17" parent="12" name="cellphone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="18" parent="12" name="email">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="19" parent="12" name="description">
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <key id="20" parent="12" name="PRIMARY">
+      <columns>cid</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
